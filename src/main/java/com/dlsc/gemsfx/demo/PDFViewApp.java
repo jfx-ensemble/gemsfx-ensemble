@@ -44,7 +44,7 @@ public class PDFViewApp extends Application {
         });
 
         try {
-            pdfView.load(getClass().getResourceAsStream("/tesla3-owners-manual.pdf"));
+            pdfView.load(getClass().getResourceAsStream("/tesla3-owners-manual-short.pdf"));
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -50,7 +50,7 @@ jar {
 }
 
 dependencies {
-    compile group: 'com.dlsc.gemsfx', name: 'gemsfx', version: '1.8.3'
+    compile group: 'com.dlsc.gemsfx', name: 'gemsfx', version: '1.9.0'
     compile "fr.brouillard.oss:cssfx:11.4.0"
 }
 
@@ -68,6 +68,9 @@ configure([project(':ensemble')]) {
         showCauses = true
         showExceptions = true
         showStackTraces = true
+    }
+    test {
+        systemProperty 'jmemorybuddy.checktime', '10000'
     }
 
 }
