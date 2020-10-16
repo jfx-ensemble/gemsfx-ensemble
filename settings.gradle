@@ -1,0 +1,3 @@
+rootProject.name = 'gemsfx-ensemble'
+
+include "ensemble"
